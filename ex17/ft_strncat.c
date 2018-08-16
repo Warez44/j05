@@ -12,18 +12,19 @@
 
 char	*ft_strncat(char *s1, char *s2, int n)
 {
-	int len;
+	char *s;
 	int i;
 
 	i = 0;
-	len = 0;
-	while (s1[len])
-		len++;
+	s = s1;
+	while(*s1)
+		s1++;
 	while (i < n)
 	{
-		s1[len + i] = s2[i];
+		if((*s1++ = *s2++) == 0)
+			break ;
 		i++;
 	}
-	s1[len + n] = '\0';
-	return (s1);
+	*s1 = '\0';
+	return (s);
 }

@@ -12,18 +12,18 @@
 
 char	*ft_strcat(char *s1, char *s2)
 {
-	int len;
-	int i;
+	char *s;
 
-	i = 0;
-	len = 0;
-	while (s1[len])
-		len++;
-	while (s2[i])
-	{
-		s1[len + i] = s2[i];
-		i++;
-	}
-	s1[len + i] = '\0';
-	return (s1);
+        s = s1;
+	if (!*s1)
+		return (s2);
+	while (*s1)
+		s1++;
+	while (1)
+        {
+		if ((*s1++ = *s2++) == 0)
+                        break ;
+        }
+	*s1 = '\0';
+	return (s);
 }
