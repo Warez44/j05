@@ -6,7 +6,7 @@
 /*   By: clingier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/13 15:23:15 by clingier          #+#    #+#             */
-/*   Updated: 2018/08/15 18:42:30 by clingier         ###   ########.fr       */
+/*   Updated: 2018/08/17 11:02:10 by clingier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@ char	*ft_strcpy(char *dest, char *src)
 	char *cp;
 
 	cp = dest;
-	while(*src)
-		*dest++=*src++;
-	dest = '\0';
-	return cp;
+	while (*src)
+		*dest++ = *src++;
+	*dest = '\0';
+	return (cp);
 }

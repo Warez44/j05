@@ -6,7 +6,7 @@
 /*   By: clingier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/14 18:41:01 by clingier          #+#    #+#             */
-/*   Updated: 2018/08/15 14:06:48 by clingier         ###   ########.fr       */
+/*   Updated: 2018/08/17 11:04:06 by clingier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@ char	*ft_strcat(char *s1, char *s2)
 {
 	char *s;
 
-        s = s1;
+	s = s1;
 	if (!*s1)
 		return (s2);
 	while (*s1)
 		s1++;
 	while (1)
-        {
+	{
 		if ((*s1++ = *s2++) == 0)
-                        break ;
-        }
+			break ;
+	}
 	*s1 = '\0';
 	return (s);
 }

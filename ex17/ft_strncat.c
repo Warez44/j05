@@ -6,22 +6,22 @@
 /*   By: clingier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/14 20:01:08 by clingier          #+#    #+#             */
-/*   Updated: 2018/08/15 14:08:20 by clingier         ###   ########.fr       */
+/*   Updated: 2018/08/17 11:06:09 by clingier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncat(char *s1, char *s2, int n)
 {
-	char *s;
-	int i;
+	int		i;
+	char	*s;
 
 	i = 0;
 	s = s1;
-	while(*s1)
+	while (*s1)
 		s1++;
 	while (i < n)
 	{
-		if((*s1++ = *s2++) == 0)
+		if ((*s1++ = *s2++) == 0)
 			break ;
 		i++;
 	}

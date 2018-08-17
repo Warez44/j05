@@ -6,11 +6,11 @@
 /*   By: clingier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/14 15:49:13 by clingier          #+#    #+#             */
-/*   Updated: 2018/08/15 13:27:41 by clingier         ###   ########.fr       */
+/*   Updated: 2018/08/17 10:55:59 by clingier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strncmp(char *s1, char *s2, unsigned int len)
+int		ft_strncmp(char *s1, char *s2, unsigned int n)
 {
 	int i;
 
@@ -21,5 +21,5 @@ int		ft_strncmp(char *s1, char *s2, unsigned int len)
 		s2++;
 		i++;
 	}
-	return (*str1 - *str2);
+	return (*s1 - *s2);
 }
